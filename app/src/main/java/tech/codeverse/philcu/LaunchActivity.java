@@ -74,6 +74,10 @@ public class LaunchActivity extends AppCompatActivity {
                 i = new Intent(this, LoginActivity.class);
                 startActivity(i);
                 break;
+            case R.id.explore_btn:
+                i = new Intent(this, MainActivity.class);
+                startActivity(i);
+                break;
             default:
                 Toast.makeText(this, "Buttons not implemented", Toast.LENGTH_SHORT).show();
         }

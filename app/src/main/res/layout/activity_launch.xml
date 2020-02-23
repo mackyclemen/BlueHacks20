@@ -51,6 +51,7 @@
             android:backgroundTint="#FFFFFF"
             android:text="@string/explore_btn"
             android:textColor="@android:color/background_dark"
+            android:onClick="onClickCallback"
             app:layout_constraintBottom_toTopOf="@+id/login_btn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
