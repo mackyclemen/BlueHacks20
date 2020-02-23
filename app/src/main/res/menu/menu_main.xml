@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="tech.codeverse.philcu.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/btn_attrib"
+        android:icon="@drawable/icon_info"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:title="@string/btn_attrib"
+        app:showAsAction="always" />
 </menu>

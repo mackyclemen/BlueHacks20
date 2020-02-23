@@ -1,7 +1,25 @@
 <resources>
-    <string name="app_name">Kalinga</string>
+    <string name="app_name">Tuklas</string>
     <string name="action_settings">Settings</string>
     <string name="login_btn">Login or Sign-up</string>
     <string name="explore_btn">Explore</string>
     <string name="desc_attribution">Attribution</string>
+    <string name="login_text">Login</string>
+    <string name="title_activity_login">Login</string>
+    <string name="btn_attrib">Attrubution</string>
+    <string name="login_instruction">Enter your login information</string>
+    <string name="input_email">E-mail</string>
+    <string name="input_password">Password</string>
+    <string name="forgotpass_btn">Forgot password?</string>
+    <string name="login_only_btn">Log-in</string>
+    <string name="no_account_prompt">Don\'t have an account?</string>
+    <string name="sign_up_btn">Signup</string>
+    <string name="title_activity_forgot_pw">Forgot Password</string>
+    <string name="forgotten_instruction">Enter the e-mail address to continue</string>
+    <string name="resetpw_btn">Reset password</string>
+    <string name="title_activity_registration">Sign up</string>
+    <string name="sign_up_instruction">Let\'s set you up!</string>
+    <string name="input_first_name">First Name</string>
+    <string name="input_last_name">Last Name</string>
+    <string name="input_password_again">Re-enter password</string>
 </resources>

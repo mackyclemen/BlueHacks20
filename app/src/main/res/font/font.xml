@@ -3,4 +3,18 @@
     <font android:fontStyle="normal"
         android:fontWeight="400"
         android:font="@font/barabara" />
+
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/asapreg"/>
+
+    <font android:fontStyle="italic"
+        android:fontWeight="400"
+        android:font="@font/asapita"/>
+
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:fontVariationSettings=""
+        android:font="@font/staatliches"/>
+
 </font-family>
