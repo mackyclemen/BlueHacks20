@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void loggedInCall() {
         Toast.makeText(this, "Logged in successfully", Toast.LENGTH_SHORT).show();
-        Intent i = new Intent(this, logoutActivity.class);
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
         finish();
     }

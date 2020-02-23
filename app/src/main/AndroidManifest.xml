@@ -9,7 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".logoutActivity"></activity>
+        <activity android:name=".HabiHowToActivity"></activity>
+        <activity android:name=".Sining_Activity4" />
+        <activity android:name=".Activity8" />
+        <activity android:name=".Activity7" />
+        <activity android:name=".Activity6" />
+        <activity android:name=".Activity5" />
+        <activity android:name=".Activity4" />
+        <activity android:name=".Activity3" />
+        <activity android:name=".Activity2" />
+        <activity android:name=".Activity1" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".logoutActivity" />
         <activity
             android:name=".RegistrationActivity"
             android:label="@string/title_activity_registration"
@@ -38,6 +49,7 @@
         <activity
             android:name=".LaunchActivity"
             android:label="@string/app_name"
+            android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,6 +57,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
