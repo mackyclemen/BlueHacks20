@@ -11,6 +11,8 @@ Tuklas is an informative application with a twist. It aims to spread the knowled
 
 ## Installation Guide
 
+**NOTICE: If you have forked this repository, do note that you now need to provide the API key (google-services.json) to be able to compile the app.**
+
 Compiling the source code is enough to generate an .APK (Android Package) file for installation in an Android device running Android 5.0.1 (API level 21).
 
 ## App Guidelines
