@@ -1,10 +1,10 @@
 ## Codeverse's Blue Hacks 2020 submission
 
 Members:
-- CASTILLO, Michael James
-- CLEMEN, Marc Steven
-- LACBAIN, Jannel
-- PINEDA, Geo Dominic
+- CASTILLO, Michael James (@MJDragoon)
+- CLEMEN, Marc Steven (@mackyclemen)
+- LACBAIN, Jannel (@lacbainnel)
+- PINEDA, Geo Dominic (@geo1526)
 
 ## Application Description
 Tuklas is an informative application with a twist. It aims to spread the knowledge of different culture to the target audience by giving the users information about the specific culture. It also helps in resolving the problem of "dying cultures" by encouraging the target audience to practice them, create their own products and show them off to other users as well, and as well as encouraging them to add their own twists.
