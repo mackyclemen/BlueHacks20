@@ -5,7 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#386CB9"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ContentDescription" >
+
+    <!-- NOTE:
+    Ignoring Content Description, will be replaced with something
+    modular in the future. -->
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -27,48 +32,63 @@
                 android:id="@+id/imageView1"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:onClick="imgViewClickHandler"
                 app:srcCompat="@mipmap/laro"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop" />
+
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:onClick="imgViewClickHandler"
                 app:srcCompat="@mipmap/literatura"
                 android:scaleType="centerCrop" />
+
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:onClick="imgViewClickHandler"
                 app:srcCompat="@mipmap/sayaw"
                 android:scaleType="centerCrop" />
+
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:onClick="imgViewClickHandler"
                 app:srcCompat="@mipmap/pagluluto"
                 android:scaleType="centerCrop"/>
+
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:onClick="imgViewClickHandler"
                 app:srcCompat="@mipmap/pananamit"
                 android:scaleType="centerCrop" />
+
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:onClick="imgViewClickHandler"
                 app:srcCompat="@mipmap/paniniwala"
                 android:scaleType="centerCrop" />
+
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:onClick="imgViewClickHandler"
                 app:srcCompat="@mipmap/relihiyon"
                 android:scaleType="centerCrop" />
+
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:onClick="imgViewClickHandler"
                 app:srcCompat="@mipmap/sining"
                 android:scaleType="centerCrop" />
 
