@@ -21,6 +21,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.Toast;
 
+import java.util.Locale;
 import java.util.Objects;
 
 public class RegistrationActivity extends AppCompatActivity {
@@ -70,32 +71,36 @@ public class RegistrationActivity extends AppCompatActivity {
         if(Objects.requireNonNull(fName.getText()).toString().isEmpty()) {
             lFName.setError("Field required");
             retCode = true;
-        };
+        }
+
         if(Objects.requireNonNull(lName.getText()).toString().isEmpty()) {
             lLName.setError("Field required");
             retCode = true;
-        };
+        }
+
         if(Objects.requireNonNull(email.getText()).toString().isEmpty()) {
             lEmail.setError("Field required");
             retCode = true;
-        };
+        }
+
         if(Objects.requireNonNull(pass.getText()).toString().isEmpty()) {
             lPass.setError("Field required");
             retCode = true;
-        };
+        }
+
         if(Objects.requireNonNull(passConf.getText()).toString().isEmpty()) {
             lPassConf.setError("Field required");
             retCode = true;
-        };
+        }
 
         if(!pass.getText().toString().equals(passConf.getText().toString())) {
             lPassConf.setError("Passwords don't match");
+            retCode = true;
         }
 
         if(retCode) {
             view.setEnabled(true);
         } else {
-
             mAuth.createUserWithEmailAndPassword(email.getText().toString(), pass.getText().toString())
                     .addOnSuccessListener(this, new OnSuccessListener<AuthResult>() {
                         @Override
@@ -110,7 +115,6 @@ public class RegistrationActivity extends AppCompatActivity {
 
                         }
                     });
-
         }
 
     }
@@ -118,7 +122,11 @@ public class RegistrationActivity extends AppCompatActivity {
     void success() {
         FirebaseUser user = Objects.requireNonNull(mAuth.getCurrentUser());
         UserProfileChangeRequest.Builder b = new UserProfileChangeRequest.Builder();
-        b.setDisplayName(fName.getText().toString() + " " + lName.getText().toString());
+
+        b.setDisplayName(String.format(Locale.getDefault(), "%s %s",
+                Objects.requireNonNull(fName.getText()).toString(),
+                Objects.requireNonNull(lName.getText()).toString()));
+
         user.updateProfile(b.build());
 
         Toast.makeText(this, "You have signed up successfully, " + user.getDisplayName() + "!", Toast.LENGTH_SHORT).show();
