@@ -4,8 +4,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -57,27 +59,36 @@ public class LaunchActivity extends AppCompatActivity {
             case R.id.btn_attrib:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setTitle("Attribution")
-                        .setMessage("Crizaldy Diverson's Long exposure photography of waterfalls (https://www.pexels.com/photo/long-exposure-photography-of-waterfalls-2407265/)")
+                        .setMessage("Crizaldy Diverson's Long exposure photography of waterfalls \n")
+                        .setNeutralButton("Pexels site", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent i = new Intent(Intent.ACTION_VIEW);
+                                i.setData((Uri.parse("https://www.pexels.com/photo/long-exposure-photography-of-waterfalls-2407265/")));
+                                startActivity(i);
+                            }
+                        })
                         .show();
                 return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
     public void onClickCallback(View view) {
-        
         Intent i;
-        
         switch(view.getId()) {
             case R.id.login_btn:
                 i = new Intent(this, LoginActivity.class);
                 startActivity(i);
                 break;
+
             case R.id.explore_btn:
                 i = new Intent(this, MainActivity.class);
                 startActivity(i);
                 break;
+
             default:
                 Toast.makeText(this, "Buttons not implemented", Toast.LENGTH_SHORT).show();
         }
