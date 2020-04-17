@@ -59,6 +59,7 @@ public class LoginActivity extends AppCompatActivity {
     public void loggedInCall() {
         Toast.makeText(this, "Logged in successfully", Toast.LENGTH_SHORT).show();
         Intent i = new Intent(this, MainActivity.class);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
         finish();
     }

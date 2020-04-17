@@ -131,6 +131,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
         Toast.makeText(this, "You have signed up successfully, " + user.getDisplayName() + "!", Toast.LENGTH_SHORT).show();
         Intent i = new Intent(this, LaunchActivity.class);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
         finish();
     }
