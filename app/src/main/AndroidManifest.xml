@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HabiHowToActivity"></activity>
+        <activity android:name=".HabiHowToActivity" />
         <activity android:name=".Sining_Activity4" />
         <activity android:name=".Activity8" />
         <activity android:name=".Activity7" />
@@ -20,7 +20,6 @@
         <activity android:name=".Activity2" />
         <activity android:name=".Activity1" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".logoutActivity" />
         <activity
             android:name=".RegistrationActivity"
             android:label="@string/title_activity_registration"
