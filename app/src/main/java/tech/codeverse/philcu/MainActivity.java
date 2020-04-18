@@ -16,24 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
 
-    ImageView img1;
-    ImageView img2;
-    ImageView img3;
-    ImageView img4;
-    ImageView img5;
-    ImageView img6;
-    ImageView img7;
-    ImageView img8;
-
-    Intent iimg1;
-    Intent iimg2;
-    Intent iimg3;
-    Intent iimg4;
-    Intent iimg5;
-    Intent iimg6;
-    Intent iimg7;
-    Intent iimg8;
-
     @Override
     public void onBackPressed() {
         if (mAuth.getCurrentUser() != null) {
